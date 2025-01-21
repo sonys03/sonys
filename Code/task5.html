@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My site</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/object.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <div class="logo"> 
+                <div class="logo-circle"></div>
+                <div class="logo-text">ZSV</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="portfolio.html">Portfolio</a></li>           
+                </ul>
+            </nav>
+        </header> 
+        
+        <section class="hero-portfolio container">
+            <div class="breadcrumb">
+                <p><a href="index.html">Home</a> > <a href="portfolio.html">Portfolio</a></p>
+            </div>
+            <h1>Задание 5. Перетаскивание объектов</h1>            
+            <section class="drag-container container">
+                <div class="instructions">
+                    <p>Перетащите животных так, чтобы они были сгруппированы по категориям (млекопитающие, насекомые, птицы)</p>
+                </div>
+                <div class="animals">
+                    <img src="img/animal/cat.png" alt="Cat" class="draggable animal" data-category="mammal" style="top: 100px; left: 150px;">
+                    <img src="img/animal/ladybug.png" alt="Ladybug" class="draggable animal" data-category="insect" style="top: 200px; left: 300px;">
+                    <img src="img/animal/mantis.png" alt="Mantis" class="draggable animal" data-category="insect" style="top: 350px; left: 450px;">
+                    <img src="img/animal/squirrel.png" alt="Squirrel" class="draggable animal" data-category="mammal" style="top: 400px; left: 700px;">
+                    <img src="img/animal/parrot.png" alt="Parrot" class="draggable animal" data-category="bird" style="top: 100px; left: 700px;">
+                    <img src="img/animal/toucan.png" alt="Toucan" class="draggable animal" data-category="bird" style="top: 300px; left: 900px;">
+                </div>
+            </section>           
+        </section>             
+    </div>          
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <div class="logo"> 
+                    <div class="logo-circle"></div>
+                    <div class="logo-text">ZSV</div>
+                </div>
+                <p>@Logo</p>
+            </div>
+            <div>
+                <h4>About</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contacts</h4>
+                <ul>
+                    <li><a href="mailto:zelenskaya.sv@edu.spbstu.ru">zelenskaya.sv@edu.spbstu.ru</a></li>
+                    <li><a href="tel:+79183682333">+7 (918) 368-23-33</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p> ® 2024 Sonya Zelenskaya. All rights Reserved</p>
+    </footer>
+</body>
+</html>

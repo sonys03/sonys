@@ -1,0 +1,73 @@
+  #timer, #score {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+/* Грустная анимация */
+@keyframes sadFadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.lose-animation {
+  animation: shake 0.5s ease-in-out, sadFadeOut 2s ease-out 1s forwards;
+}
+
+/* Веселая анимация */
+@keyframes happyBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #8c52ff, 0 0 20px #8c52ff;
+  }
+  50% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #8c52ff, 0 0 30px #8c52ff;
+  }
+}
+
+.win-animation {
+  animation: happyBounce 1s infinite, glow 1.5s infinite;
+}
+
+.rules li {
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+.rules p {
+  text-align: justify;
+  margin-top: 1em;
+}

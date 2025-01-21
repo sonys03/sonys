@@ -1,0 +1,155 @@
+.panda-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  height: 50vh; 
+  margin: 20px auto; 
+  position: relative;
+  z-index: 0;
+}
+
+.panda {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 7%, rgba(255,234,0,1) 68%);
+  border-radius: 50%;
+  border: 3px solid #888;
+}
+
+/* Уши */
+.ears .ear {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 7%, rgba(136,136,136,1) 74%);
+  border-radius: 50%;
+  top: -20px;
+  z-index: -1;
+  border: 3px solid #888888;
+}
+
+.ears .ear.left {
+  left: 10px;
+}
+
+.ears .ear.right {
+  right: 10px;
+}
+
+/* Глаза */
+.face .eye {
+  position: absolute;
+  width: 60px;
+  height: 90px;
+  background: #4a4a4a;
+  border-radius: 50%;
+  top: 50px;
+}
+
+.face .eye.left {
+  left: 30px;
+  transform: rotate(20deg);
+}
+
+.face .eye.right {
+  right: 30px;
+  transform: rotate(-20deg);
+}
+
+.face .eye::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50%;
+  top: 20px;
+  left: 20px;
+}
+
+.face .eye.left::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #4a4a4a;
+  border-radius: 50%;
+  top: 20px; 
+  left: 27px;
+}
+
+.face .eye.right::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #4a4a4a;
+  border-radius: 50%;
+  top: 20px; 
+  left: 17px;
+}
+
+/* Нос */
+.face .nose {
+  position: absolute;
+  width: 35px;
+  height: 20px;
+  background: rgb(88,87,88);
+  background: linear-gradient(90deg, rgba(88,87,88,1) 0%, rgba(34,33,33,1) 52%, rgba(88,87,88,1) 100%);
+  border-radius: 50%;
+  top: 130px;
+  left: 100px;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Рот */
+.face .mouth.left {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 2px solid black;
+  border-top: none;
+  border-radius: 0 0 80px 80px;
+  top: 150px;
+  left: 33%;
+  transform: rotate(-20deg);
+}
+
+.face .mouth.right {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  border: 2px solid black;
+  border-top: none;
+  border-radius: 0 0 80px 80px;
+  top: 150px;
+  left: 49%;
+  transform: rotate(20deg);
+}
+
+
+/* Бабочка */
+.bow {
+  position: absolute;
+  width: 35px;
+  aspect-ratio: 1;
+  background: red;
+  border-radius: 0 70% 50% 70%;
+}
+
+.bow.left {
+  top: 200px;
+  left: 58px;
+  transform: rotate(130deg);
+}
+
+.bow.right {
+  top: 200px;
+  right: 58px;
+  transform: rotate(-40deg);
+}
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hungman.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="rules" class="rules">
+        <h2>Правила игры</h2>
+        <p>
+          Добро пожаловать в игру "Виселица"! Ваша задача — угадать слово, отгадывая буквы.
+        </p>
+        <ul>
+          <div id="options-container"></div>
+          <li>Для отгадывания нажимайте на буквы в алфавите.</li>
+          <li>За каждую угаданную букву вы получите очки. За правильно отгаданное слово — бонусные 50 очков!</li>
+          <li>У вас есть 6 попыток, чтобы угадать слово. Каждая неверная буква приближает вас к поражению.</li>
+          <li>Также есть ограничение по времени — 2 минуты.</li>
+        </ul>
+        <p>
+          Постарайтесь угадать слово до окончания времени или до того, как нарисуется весь человечек. Удачи!
+        </p>
+      </div>
+      
+      <div id="letter-container" class="letter-container hide"></div>
+      <div id="user-input-section"></div>
+      <canvas id="canvas"></canvas>
+      <div id="timer"></div>
+      <div id="score"></div>
+      <div id="result-text"></div>
+      <button id="end-game-btn">Завершить игру</button>
+    </div>
+    <script src="js/hungman.js"></script>
+  </body>
+</html>
